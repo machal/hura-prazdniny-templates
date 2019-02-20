@@ -1,0 +1,41 @@
+{
+  "name": "hura-prazdniny-templates",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:machal/hura-prazdniny-templates.git"
+  },
+  "contributors": [
+    {
+      "name": "Martin Michálek"
+    }
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "popper": "^1.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 4 versions"
+  ],
+  "scripts": {
+    "browsersync": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js\"",
+    "sass": "npx node-sass src/sass/index.scss > dist/css/style.css ",
+    "autoprefixer": "postcss -u autoprefixer --grid=true -r dist/css/style.css",
+    "build:css": "run-s sass autoprefixer",
+    "watch:css": "onchange \"src/sass/*.scss\" -- run-s build:css",
+    "watch": "run-p browsersync watch:*",
+    "start": "run-s build:* watch"
+  }
+}
