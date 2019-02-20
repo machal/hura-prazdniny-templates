@@ -34,7 +34,7 @@
     "sass": "npx node-sass src/sass/index.scss > dist/css/style.css ",
     "autoprefixer": "postcss -u autoprefixer --grid=true -r dist/css/style.css",
     "build:css": "run-s sass autoprefixer",
-    "watch:css": "onchange \"src/sass/*.scss\" -- run-s build:css",
+    "watch:css": "onchange \"src/sass/**/*.scss\" -- run-s build:css",
     "watch": "run-p browsersync watch:*",
     "start": "run-s build:* watch"
   }
