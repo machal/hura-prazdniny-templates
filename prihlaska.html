@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <title>Hurá, prázdniny!</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="hp-head">
+
+        <p class="hp-head__preheading h2">
+          Hurá prázdniny z. s.
+        </p>
+        
+        <h1 class="hp-head__heading">
+          Přihláška
+        </h1> 
+  
+        <p class="hp-head__postheading h3">
+          2019
+        </p>      
+
+      </div>
+      <!-- /.hp-head -->
+
+      <div class="hp-content">
+
+          <form action="/prihlaska/" method="post" class="form">
+            <input type="hidden" name="csrfmiddlewaretoken" value="7WCyFKNQdci062pgb9MgOYGtndjLHOBX1CVQX7SSHUFmBS23gooPjv5SPgUNDUd2">
+            <div class="form-group"><label for="id_item">Výběr tábora</label><select name="item" class="form-control" title="" id="id_item">
+      <option value="1" selected="selected">Tabor 1</option>
+    
+      <option value="2">Tabor 2</option>
+    
+      <option value="3">Tabor 3</option>
+    
+    </select></div>
+    <div class="form-group"><label for="id_child_name">Jméno</label><input type="text" name="child_name" maxlength="50" class="form-control" placeholder="Jméno" title="" required="" id="id_child_name"></div>
+    <div class="form-group"><label for="id_child_surname">Příjmení</label><input type="text" name="child_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" required="" id="id_child_surname"></div>
+    <div class="form-group"><label for="id_child_bnumber">Rodné číslo</label><input type="text" name="child_bnumber" maxlength="11" class="form-control" placeholder="Rodné číslo" title="" required="" id="id_child_bnumber"></div>
+    <div class="form-group"><label for="id_insurance">Zdravotní pojištovna</label><select name="insurance" class="form-control" title="" id="id_insurance">
+    </select></div>
+    <div class="form-group"><label for="id_street">Ulice a číslo popisné</label><input type="text" name="street" maxlength="200" class="form-control" placeholder="Ulice a číslo popisné" title="" required="" id="id_street"></div>
+    <div class="form-group"><label for="id_town">Obec</label><input type="text" name="town" maxlength="200" class="form-control" placeholder="Obec" title="" required="" id="id_town"></div>
+    <div class="form-group"><label for="id_zip">PSČ</label><input type="text" name="zip" maxlength="6" class="form-control" placeholder="PSČ" title="" required="" id="id_zip"></div>
+    <div class="form-group"><label for="id_adult1_name">Jméno</label><input type="text" name="adult1_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult1_name"></div>
+    <div class="form-group"><label for="id_adult1_surname">Příjmení</label><input type="text" name="adult1_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult1_surname"></div>
+    <div class="form-group"><label for="id_adult1_phone">Telefon</label><input type="text" name="adult1_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult1_phone"></div>
+    <div class="form-group"><label for="id_adult2_name">Jméno</label><input type="text" name="adult2_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult2_name"></div>
+    <div class="form-group"><label for="id_adult2_surname">Příjmení</label><input type="text" name="adult2_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult2_surname"></div>
+    <div class="form-group"><label for="id_adult2_phone">Telefon</label><input type="text" name="adult2_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult2_phone"></div>
+    <div class="form-group"><label for="id_email">Email</label><input type="email" name="email" maxlength="254" class="form-control" placeholder="Email" title="Na tuto adresu Vám přijde potvrzení a další instrukce." required="" id="id_email">
+    
+    
+        <small class="form-text text-muted">Na tuto adresu Vám přijde potvrzení a další instrukce.</small>
+    
+    </div>
+    <div class="form-group"><label for="id_note">Jiné důležité údaje</label><textarea name="note" cols="40" rows="10" class="form-control" placeholder="Jiné důležité údaje" title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok." id="id_note"></textarea>
+    
+    
+        <small class="form-text text-muted">Zde můžete sdělit informace, 
+    které se nemusí týkat přímo zdravotního stavu a přesto jsou pro 
+    bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné
+     ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok.</small>
+    
+    </div>
+    <div class="form-group"><div class="form-check"><input type="checkbox" name="agreement" class="form-check-input" required="" id="id_agreement"><label class="form-check-label" for="id_agreement" title="Odkaz na PDF">Souhlasím se smluvními podmínkami</label>
+    
+    
+        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
+    
+    </div></div>
+    <div class="form-group"><div class="form-check"><input type="checkbox" name="gdpr" class="form-check-input" required="" id="id_gdpr"><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF">Souhlasím se zpracováním osobních údajů</label>
+    
+    
+        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
+    
+    </div></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+        </form> 
+
+      </div>
+      <!-- /.hp-content -->
+
+
+    </div><!-- .container -->
+
+
+    <div class="hp-foot">
+
+      <div class="container">
+
+        <p class="hp-foot__logo">
+          <i>TODO Logo</i>
+        </p> 
+
+        <p class="hp-foot__text-large">
+            Stránky provozuje spolek Hurá prázdniny.
+            Přes 20 let pořádáme oblíbené dětské tábory.
+            Vaše dotazy rádi zodpovíme na 
+            <a href="mailto:info@huraprazdniny.cz?subject=Dotaz%20z%20webu&body=Dobr%C3%BD%20den%2C%0A%0A">info@huraprazdniny.cz</a>
+            nebo na telefonu 
+            <strong>606 643 700</strong>.
+        </p>
+
+        <p class="hp-foot__text-small">
+          Hurá prázdniny z.s. se sídlem Rekreační 2126/7, Poruba, 708 00 Ostrava, IČO 1348388, datová schránka: d5e27n6
+          <br>
+          <a href="#">Stanovy</a> — 
+          <a href="#">Táborový řád</a> — 
+          <a href="#">Archiv táborů</a> — 
+          <a href="#">Napište nám</a>
+          <br>
+          <a href="#">Facebook</a> — 
+          <a href="#">Instagram</a> — 
+          <a href="#">Transparentní účet</a>
+        </p>
+
+      </div>
+
+    </div><!-- /.hp-foot -->    
+    
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
