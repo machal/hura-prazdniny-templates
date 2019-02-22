@@ -5,13 +5,19 @@
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/root";
 
-// Variable overrides
+// HuraPrazdniny.cz custom code
 
-@import "huraprazdniny/variables";
-@import "huraprazdniny/fonts";
+// Variable overrides, etc
 
+@import "huraprazdniny/base/variables";
+@import "huraprazdniny/base/fonts";
+@import "huraprazdniny/base/text";
 
-// BS components
+@import "huraprazdniny/components/content";
+@import "huraprazdniny/components/head";
+@import "huraprazdniny/components/foot";
+
+// Bootstrap components
 
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
@@ -47,3 +53,6 @@
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
+// Bootstrap overrides
+
+@import "huraprazdniny/base/bootstrap-overrides";

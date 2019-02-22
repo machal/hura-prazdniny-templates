@@ -1,0 +1,6 @@
+// Redefining 16px base font size
+// because everything in BS is calculated from <html>
+
+html {
+  font-size: 118.75%; // 19px
+}

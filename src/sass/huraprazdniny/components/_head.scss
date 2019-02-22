@@ -1,0 +1,14 @@
+// Head 
+
+// Site main head
+
+.hp-head {
+  text-align: center;
+}
+
+.hp-head__postheading {
+  border-radius: $border-radius;
+  background: $white;
+  display: inline-block;
+  padding: $hp-padding-y $hp-padding-x;
+}
