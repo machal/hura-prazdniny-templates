@@ -1,4 +1,12 @@
 
+body {
+  background-color: #e4f7f8;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 50%;
+}
+
 .btn-primary {
   color: $white;
 }
