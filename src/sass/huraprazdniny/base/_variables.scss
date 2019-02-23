@@ -9,8 +9,19 @@ $body-color: #32495e;
 
 // Theme colors
 
+//  Should be everything here
+// because of generating modifier in cycles 
+// (alert-*)
+
 $theme-colors: (
-  "primary": #ff6e56
+  "primary": #ff6e56,
+  // "secondary":  $secondary,
+  "success":    #4bdbc4,
+  // "info":       $info,
+  "warning":    #ff6e56,
+  // "danger":     $danger,
+  // "light":      $light,
+  "dark":       #32495e
 );
 
 $link-color:  #ff6e56;

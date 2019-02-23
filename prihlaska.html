@@ -10,12 +10,15 @@
   </head>
   <body>
 
+    <!-- Navigace -->
     <nav class="hp-navmain" role="navigation">
+      <!-- Logo -->
       <p class="hp-navmain__center">
         <a href="#" class="hp-navmain__center-logo">
           <img src="dist/svg/hrp-logo.svg" alt="Hurá prázdniny" class="img-fluid">
         </a>
       </p>
+      <!-- Domu a nabidka taboru -->
       <p class="hp-navmain__left">
         <a href="#" class="hp-navmain__left-home btn btn-secondary btn-inverted">
           <img src="dist/svg/home.svg" alt="Domů" class="hp-navmain__left-img">
@@ -25,6 +28,7 @@
           <span class="d-inline d-sm-none">Tábory</span>
         </a>
       </p>
+      <!-- Prihlaska -->
       <p class="hp-navmain__right">
         <a href="#" class="hp-navmain__right-form btn btn-primary">Přihláška</a>
       </p>
@@ -33,14 +37,15 @@
     
     <div class="container">
 
+      <!-- Nadpisy na strance -->
       <div class="hp-head">
 
         <p class="hp-head__preheading h2">
-          Hurá prázdniny z. s.
+          Hurá prázdniny z. s.
         </p>
         
         <h1 class="hp-head__heading">
-          Přihláška
+          Přihláš&shy;ka
         </h1> 
   
         <p class="hp-head__postheading h3">
@@ -56,6 +61,19 @@
 <!-- Začátek obsahu  -->
 
 <form action="/prihlaska/" method="post" class="form">
+
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Přihlášku jsme zaregistrovali!</h4>
+    <p class="mb-0">Děkujeme za zájem! </p>
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+    <h4 class="alert-heading">Přihlášku se nepovedlo odeslat</h4>
+    <p class="mb-0">Vyplňte prosím všechna červeně označená políčka ve formuláři.</p>
+  </div>
+
+
+
   <input type="hidden" name="csrfmiddlewaretoken"
     value="iynOkW2Rgiz1O4RxZ0AFS2boStKzeqAgceG6Cj7TK0WnjUuk4fcenzANkwlBawcl">
   <div class="form-group row"><label class="col-md-3 col-form-label" for="id_item">Výběr tábora</label>
@@ -69,8 +87,12 @@
       </select></div>
   </div>
   <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="child_name" maxlength="50" class="form-control" placeholder="Jméno"
-        title="" required="" id="id_child_name"></div>
+    <div class="col-md-9"><input type="text" name="child_name" maxlength="50" class="form-control is-invalid" placeholder="Jméno"
+        title="" required="" id="id_child_name">
+        <div class="invalid-feedback">
+            Zadejte prosím jméno.
+        </div>      
+      </div>
   </div>
   <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_surname">Příjmení</label>
     <div class="col-md-9"><input type="text" name="child_surname" maxlength="100" class="form-control"
@@ -185,12 +207,13 @@
     </div><!-- .container -->
 
 
+    <!-- Paticka -->
     <footer class="hp-foot" role="contentinfo">
 
       <div class="hp-foot__wave"></div>
 
       <div class="container">
-
+          
         <p class="hp-foot__logo">
           <a href="#" class="hp-foot__logo-anchor">
             <img src="/dist/svg/hrp-logo-triradkove.svg" alt="Hurá prádzniny" class="img-fluid">
@@ -225,7 +248,7 @@
 
     </footer><!-- /.hp-foot -->    
     
-    <!-- Optional JavaScript -->
+    <!-- JS (zatim nepotrebujeme) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
