@@ -48,3 +48,7 @@ $hp-padding-x:         1em;
 
 $input-padding-y: $hp-padding-y;
 $input-padding-x: $hp-padding-x;
+
+// Buttons
+
+$btn-border-radius: $border-radius; // Changing only $border-radius does not work
