@@ -1,7 +1,43 @@
 // 
 
 .hp-foot {
-  background: #2d475e;
+  position: relative;
+  background-color: #2d475e;
   color: $white;
   text-align: center;
+  padding-top: 4rem;
+}
+
+.hp-foot__wave {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  height: 23px;
+  width: 100%;
+  background-image: url(../svg/vlnka.svg);
+  background-repeat: repeat-x;
+}
+
+.hp-foot__logo-anchor {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.hp-foot__text-large {
+  font-size: $font-size-lg;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.hp-foot__text-small {
+  font-size: $font-size-sm;  
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.hp-foot__phone {
+  color: #4bdbc4;
 }
