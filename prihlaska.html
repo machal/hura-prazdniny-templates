@@ -6,10 +6,31 @@
 
     <link rel="stylesheet" href="dist/css/style.css">
 
-    <title>Hurá, prázdniny!</title>
+    <title>Přihláška — Hurá, prázdniny!</title>
   </head>
   <body>
 
+    <nav class="hp-navmain" role="navigation">
+      <p class="hp-navmain__center">
+        <a href="#" class="hp-navmain__center-logo">
+          <img src="dist/svg/hrp-logo.svg" alt="Hurá prázdniny" class="img-fluid">
+        </a>
+      </p>
+      <p class="hp-navmain__left">
+        <a href="#" class="hp-navmain__left-home btn btn-secondary btn-inverted">
+          <img src="dist/svg/home.svg" alt="Domů" class="hp-navmain__left-img">
+        </a>
+        <a href="#" class="hp-navmain__left-camps btn btn-secondary btn-inverted">
+          <span class="d-none d-sm-inline">Nabídka táborů</span>
+          <span class="d-inline d-sm-none">Tábory</span>
+        </a>
+      </p>
+      <p class="hp-navmain__right">
+        <a href="#" class="hp-navmain__right-form btn btn-primary">Přihláška</a>
+      </p>
+    </nav>
+    <!-- /.hp-navmain -->
+    
     <div class="container">
 
       <div class="hp-head">
@@ -31,63 +52,70 @@
 
       <div class="hp-content">
 
-          <form action="/prihlaska/" method="post" class="form">
-            <input type="hidden" name="csrfmiddlewaretoken" value="7WCyFKNQdci062pgb9MgOYGtndjLHOBX1CVQX7SSHUFmBS23gooPjv5SPgUNDUd2">
-            <div class="form-group"><label for="id_item">Výběr tábora</label><select name="item" class="form-control" title="" id="id_item">
-      <option value="1" selected="selected">Tabor 1</option>
-    
-      <option value="2">Tabor 2</option>
-    
-      <option value="3">Tabor 3</option>
-    
-    </select></div>
-    <div class="form-group"><label for="id_child_name">Jméno</label><input type="text" name="child_name" maxlength="50" class="form-control" placeholder="Jméno" title="" required="" id="id_child_name"></div>
-    <div class="form-group"><label for="id_child_surname">Příjmení</label><input type="text" name="child_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" required="" id="id_child_surname"></div>
-    <div class="form-group"><label for="id_child_bnumber">Rodné číslo</label><input type="text" name="child_bnumber" maxlength="11" class="form-control" placeholder="Rodné číslo" title="" required="" id="id_child_bnumber"></div>
-    <div class="form-group"><label for="id_insurance">Zdravotní pojištovna</label><select name="insurance" class="form-control" title="" id="id_insurance">
-    </select></div>
-    <div class="form-group"><label for="id_street">Ulice a číslo popisné</label><input type="text" name="street" maxlength="200" class="form-control" placeholder="Ulice a číslo popisné" title="" required="" id="id_street"></div>
-    <div class="form-group"><label for="id_town">Obec</label><input type="text" name="town" maxlength="200" class="form-control" placeholder="Obec" title="" required="" id="id_town"></div>
-    <div class="form-group"><label for="id_zip">PSČ</label><input type="text" name="zip" maxlength="6" class="form-control" placeholder="PSČ" title="" required="" id="id_zip"></div>
-    <div class="form-group"><label for="id_adult1_name">Jméno</label><input type="text" name="adult1_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult1_name"></div>
-    <div class="form-group"><label for="id_adult1_surname">Příjmení</label><input type="text" name="adult1_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult1_surname"></div>
-    <div class="form-group"><label for="id_adult1_phone">Telefon</label><input type="text" name="adult1_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult1_phone"></div>
-    <div class="form-group"><label for="id_adult2_name">Jméno</label><input type="text" name="adult2_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult2_name"></div>
-    <div class="form-group"><label for="id_adult2_surname">Příjmení</label><input type="text" name="adult2_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult2_surname"></div>
-    <div class="form-group"><label for="id_adult2_phone">Telefon</label><input type="text" name="adult2_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult2_phone"></div>
-    <div class="form-group"><label for="id_email">Email</label><input type="email" name="email" maxlength="254" class="form-control" placeholder="Email" title="Na tuto adresu Vám přijde potvrzení a další instrukce." required="" id="id_email">
-    
-    
-        <small class="form-text text-muted">Na tuto adresu Vám přijde potvrzení a další instrukce.</small>
-    
-    </div>
-    <div class="form-group"><label for="id_note">Jiné důležité údaje</label><textarea name="note" cols="40" rows="10" class="form-control" placeholder="Jiné důležité údaje" title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok." id="id_note"></textarea>
-    
-    
-        <small class="form-text text-muted">Zde můžete sdělit informace, 
-    které se nemusí týkat přímo zdravotního stavu a přesto jsou pro 
-    bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné
-     ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok.</small>
-    
-    </div>
-    <div class="form-group"><div class="form-check"><input type="checkbox" name="agreement" class="form-check-input" required="" id="id_agreement"><label class="form-check-label" for="id_agreement" title="Odkaz na PDF">Souhlasím se smluvními podmínkami</label>
-    
-    
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-    
-    </div></div>
-    <div class="form-group"><div class="form-check"><input type="checkbox" name="gdpr" class="form-check-input" required="" id="id_gdpr"><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF">Souhlasím se zpracováním osobních údajů</label>
-    
-    
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-    
-    </div></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">
-                Submit
-              </button>
-            </div>
-        </form> 
+
+<!-- Začátek obsahu  -->
+
+<form action="/prihlaska/" method="post" class="form">
+  <input type="hidden" name="csrfmiddlewaretoken" value="iynOkW2Rgiz1O4RxZ0AFS2boStKzeqAgceG6Cj7TK0WnjUuk4fcenzANkwlBawcl">
+  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_item">Výběr tábora</label><div class="col-md-9"><select name="item" class="form-control" title="" id="id_item">
+<option value="1" selected="selected">Tabor 1</option>
+
+<option value="2">Tabor 2</option>
+
+<option value="3">Tabor 3</option>
+
+</select></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_name">Jméno</label><div class="col-md-9"><input type="text" name="child_name" maxlength="50" class="form-control" placeholder="Jméno" title="" required="" id="id_child_name"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_surname">Příjmení</label><div class="col-md-9"><input type="text" name="child_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" required="" id="id_child_surname"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_bnumber">Rodné číslo</label><div class="col-md-9"><input type="text" name="child_bnumber" maxlength="11" class="form-control" placeholder="Rodné číslo" title="" required="" id="id_child_bnumber"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_insurance">Zdravotní pojištovna</label><div class="col-md-9"><select name="insurance" class="form-control" title="" id="id_insurance">
+</select></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_street">Ulice a číslo popisné</label><div class="col-md-9"><input type="text" name="street" maxlength="200" class="form-control" placeholder="Ulice a číslo popisné" title="" id="id_street"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_town">Obec</label><div class="col-md-9"><input type="text" name="town" maxlength="200" class="form-control" placeholder="Obec" title="" required="" id="id_town"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_zip">PSČ</label><div class="col-md-9"><input type="text" name="zip" maxlength="6" class="form-control" placeholder="PSČ" title="" required="" id="id_zip"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_name">Jméno</label><div class="col-md-9"><input type="text" name="adult1_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult1_name"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_surname">Příjmení</label><div class="col-md-9"><input type="text" name="adult1_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult1_surname"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_phone">Telefon</label><div class="col-md-9"><input type="text" name="adult1_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult1_phone"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_name">Jméno</label><div class="col-md-9"><input type="text" name="adult2_name" maxlength="50" class="form-control" placeholder="Jméno" title="" id="id_adult2_name"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_surname">Příjmení</label><div class="col-md-9"><input type="text" name="adult2_surname" maxlength="100" class="form-control" placeholder="Příjmení" title="" id="id_adult2_surname"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_phone">Telefon</label><div class="col-md-9"><input type="text" name="adult2_phone" maxlength="9" class="form-control" placeholder="Telefon" title="" id="id_adult2_phone"></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_email">Email</label><div class="col-md-9"><input type="email" name="email" maxlength="254" class="form-control" placeholder="Email" title="Na tuto adresu Vám přijde potvrzení a další instrukce." required="" id="id_email">
+
+
+<small class="form-text text-muted">Na tuto adresu Vám přijde potvrzení a další instrukce.</small>
+
+</div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_note">Jiné důležité údaje</label><div class="col-md-9"><textarea name="note" cols="40" rows="10" class="form-control" placeholder="Jiné důležité údaje" title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok." id="id_note"></textarea>
+
+
+<small class="form-text text-muted">Zde můžete sdělit informace, 
+které se nemusí týkat přímo zdravotního stavu a přesto jsou pro 
+bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné
+ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok.</small>
+
+</div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_agreement">&nbsp;</label><div class="col-md-9"><div class="form-check"><input type="checkbox" name="agreement" class="form-check-input" required="" id="id_agreement"><label class="form-check-label" for="id_agreement" title="Odkaz na PDF">Souhlasím se smluvními podmínkami</label>
+
+
+<small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
+
+</div></div></div>
+<div class="form-group row"><label class="col-md-3 col-form-label" for="id_gdpr">&nbsp;</label><div class="col-md-9"><div class="form-check"><input type="checkbox" name="gdpr" class="form-check-input" required="" id="id_gdpr"><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF">Souhlasím se zpracováním osobních údajů</label>
+
+
+<small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
+
+</div></div></div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  </div>
+</form>        
+
+
+<!-- Konec obsahu  -->
+
 
       </div>
       <!-- /.hp-content -->
@@ -96,21 +124,27 @@
     </div><!-- .container -->
 
 
-    <div class="hp-foot">
+    <footer class="hp-foot" role="contentinfo">
+
+      <div class="hp-foot__wave"></div>
 
       <div class="container">
 
         <p class="hp-foot__logo">
-          <i>TODO Logo</i>
+          <a href="#" class="hp-foot__logo-anchor">
+            <img src="/dist/svg/hrp-logo-triradkove.svg" alt="Hurá prádzniny" class="img-fluid">
+          </a>
         </p> 
 
         <p class="hp-foot__text-large">
-            Stránky provozuje spolek Hurá prázdniny.
+            Stránky provozuje spolek Hurá prázdniny.
+            <br>
             Přes 20 let pořádáme oblíbené dětské tábory.
+            <br>
             Vaše dotazy rádi zodpovíme na 
             <a href="mailto:info@huraprazdniny.cz?subject=Dotaz%20z%20webu&body=Dobr%C3%BD%20den%2C%0A%0A">info@huraprazdniny.cz</a>
-            nebo na telefonu 
-            <strong>606 643 700</strong>.
+            <br> nebo na telefonu 
+            <strong class="hp-foot__phone">606 643 700</strong>.
         </p>
 
         <p class="hp-foot__text-small">
@@ -128,7 +162,7 @@
 
       </div>
 
-    </div><!-- /.hp-foot -->    
+    </footer><!-- /.hp-foot -->    
     
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
