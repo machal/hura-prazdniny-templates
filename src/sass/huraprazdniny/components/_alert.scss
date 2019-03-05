@@ -1,0 +1,21 @@
+// HP web: Alert
+
+// Form messages
+
+.hp-alert {
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+}
+
+.hp-alert__image {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hp-alert__heading {
+  margin-bottom: 1rem;
+}

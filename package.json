@@ -38,7 +38,7 @@
     "autoprefixer": "postcss -u autoprefixer --grid=true -r dist/css/style.css",
     "build:html": "run-s mustache",
     "build:css": "run-s sass autoprefixer",
-    "watch:html": "onchange \"src/*.mustache\" -- run-s build:html",
+    "watch:html": "onchange \"src/**/*.mustache\" -- run-s build:html",
     "watch:css": "onchange \"src/sass/**/*.scss\" -- run-s build:css",
     "watch": "run-p browsersync watch:*",
     "start": "run-s build:* watch"

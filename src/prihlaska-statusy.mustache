@@ -9,144 +9,54 @@
 
 <!-- Začátek obsahu  -->
 
-<form action="/prihlaska/" method="post" class="form">
+<!-- STATE.TOO_LATE -->
 
-  <div class="alert alert-success" role="alert">
-    <h4 class="alert-heading">Přihlášku jsme zaregistrovali!</h4>
-    <p class="mb-0">Děkujeme za zájem! </p>
-  </div>
+<div class="hp-alert" role="alert">
+  <img src="dist/svg/prihlaska-ko.svg" width="142" height="142" alt="" class="hp-alert__image">
+  <h2 class="hp-alert__heading">
+      Tábor je vyprodán.
+  </h2>
+  <p class="mb-0">
+      Momentálně není možné se přihlašovat a plné máme i stavy náhradníků. Můžete nám ale zkusit napsat na <a href="mailto:info@huraprazdniny.cz">info@huraprazdniny.cz</a> a třeba něco vymyslíme.
+  </p>
+</div>
 
-  <div class="alert alert-warning" role="alert">
-    <h4 class="alert-heading">Přihlášku se nepovedlo odeslat</h4>
-    <p class="mb-0">Vyplňte prosím všechna červeně označená políčka ve formuláři.</p>
-  </div>
+<!-- /STATE.TOO_LATE -->
 
+<br><br>
 
+<!-- STATE.NOT_ACCEPTED -->
 
-  <input type="hidden" name="csrfmiddlewaretoken"
-    value="iynOkW2Rgiz1O4RxZ0AFS2boStKzeqAgceG6Cj7TK0WnjUuk4fcenzANkwlBawcl">
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_item">Výběr tábora</label>
-    <div class="col-md-9"><select name="item" class="form-control" title="" id="id_item">
-        <option value="1" selected="selected">Tabor 1</option>
+<div class="hp-alert" role="alert">
+  <img src="dist/svg/prihlaska-nahradnik.svg" width="142" height="142" alt="" class="hp-alert__image">
+  <h2 class="hp-alert__heading">
+      Ou, kapacita je naplněna.
+  </h2>
+  <p class="mb-0">
+      Vaši přihlášku jsme si uložili, ale musíme ji evidovat v režimu náhradníka. O dalším průběhu vás budeme informovat. Kdybyste se chtěli na cokoliv zeptat, napište na <a href="mailto:info@huraprazdniny.cz">info@huraprazdniny.cz</a>
+  </p>
+</div>   
 
-        <option value="2">Tabor 2</option>
+<!-- /STATE.TOO_LATE -->
 
-        <option value="3">Tabor 3</option>
+<br><br>
 
-      </select></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="child_name" maxlength="50" class="form-control is-invalid" placeholder="Jméno"
-        title="" required="" id="id_child_name">
-        <div class="invalid-feedback">
-            Zadejte prosím jméno.
-        </div>      
-      </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="child_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" required="" id="id_child_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_bnumber">Rodné číslo</label>
-    <div class="col-md-9"><input type="text" name="child_bnumber" maxlength="11" class="form-control"
-        placeholder="Rodné číslo" title="" required="" id="id_child_bnumber"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_insurance">Zdravotní pojištovna</label>
-    <div class="col-md-9"><select name="insurance" class="form-control" title="" id="id_insurance">
-      </select></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_street">Ulice a číslo popisné</label>
-    <div class="col-md-9"><input type="text" name="street" maxlength="200" class="form-control"
-        placeholder="Ulice a číslo popisné" title="" id="id_street"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_town">Obec</label>
-    <div class="col-md-9"><input type="text" name="town" maxlength="200" class="form-control" placeholder="Obec"
-        title="" required="" id="id_town"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_zip">PSČ</label>
-    <div class="col-md-9"><input type="text" name="zip" maxlength="6" class="form-control" placeholder="PSČ" title=""
-        required="" id="id_zip"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="adult1_name" maxlength="50" class="form-control" placeholder="Jméno"
-        title="" id="id_adult1_name"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="adult1_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" id="id_adult1_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_phone">Telefon</label>
-    <div class="col-md-9"><input type="text" name="adult1_phone" maxlength="9" class="form-control"
-        placeholder="Telefon" title="" id="id_adult1_phone"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="adult2_name" maxlength="50" class="form-control" placeholder="Jméno"
-        title="" id="id_adult2_name"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="adult2_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" id="id_adult2_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_phone">Telefon</label>
-    <div class="col-md-9"><input type="text" name="adult2_phone" maxlength="9" class="form-control"
-        placeholder="Telefon" title="" id="id_adult2_phone"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_email">Email</label>
-    <div class="col-md-9"><input type="email" name="email" maxlength="254" class="form-control" placeholder="Email"
-        title="Na tuto adresu Vám přijde potvrzení a další instrukce." required="" id="id_email">
+<!-- STATE.cajk ;) -->
+
+<div class="hp-alert" role="alert">
+    <img src="dist/svg/prihlaska-ok.svg" width="142" height="142" alt="" class="hp-alert__image">
+    <h2 class="hp-alert__heading">
+        Děkujeme za přihlášku!
+    </h2>
+    <p class="mb-0">
+        Přihláška byla úspěšně odeslána. Na zadaný e-mail obdržíte co nevidět potvrzení s dalšími instrukcemi.
+    </p>
+</div>   
+
+<!-- /STATE.cajk ;) -->
 
 
-      <small class="form-text text-muted">Na tuto adresu Vám přijde potvrzení a další instrukce.</small>
-
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_note">Jiné důležité údaje</label>
-    <div class="col-md-9"><textarea name="note" cols="40" rows="10" class="form-control"
-        placeholder="Jiné důležité údaje"
-        title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok."
-        id="id_note"></textarea>
-
-
-      <small class="form-text text-muted">Zde můžete sdělit informace,
-        které se nemusí týkat přímo zdravotního stavu a přesto jsou pro
-        bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné
-        ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok.</small>
-
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_agreement">&nbsp;</label>
-    <div class="col-md-9">
-      <div class="form-check"><input type="checkbox" name="agreement" class="form-check-input" required=""
-          id="id_agreement"><label class="form-check-label" for="id_agreement" title="Odkaz na PDF">Souhlasím se
-          smluvními podmínkami</label>
-
-
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-
-      </div>
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_gdpr">&nbsp;</label>
-    <div class="col-md-9">
-      <div class="form-check"><input type="checkbox" name="gdpr" class="form-check-input" required=""
-          id="id_gdpr"><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF">Souhlasím se zpracováním
-          osobních údajů</label>
-
-
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">
-      Submit
-    </button>
-  </div>
-</form>
-
-
-<!-- Konec obsahu  -->
+<!-- / Konec obsahu  -->
 
 
       </div>
