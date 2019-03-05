@@ -5,6 +5,11 @@
 .hp-content {
   background: $white;
   border-radius: $border-radius-lg;
-  padding: 3rem;
-  margin-bottom: 6rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem;
+    margin-bottom: 6rem;
+  }
 }
