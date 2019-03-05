@@ -32,149 +32,435 @@
     <a href="#" class="hp-navmain__right-form btn btn-primary">Přihláška</a>
   </p>
 </nav>
-<!-- /.hp-navmain -->    
-    <div class="container">
+<!-- /.hp-navmain -->
+<div class="container">
+  <div class="hp-content">
+    <!-- Začátek obsahu  -->
 
-      <div class="hp-content">
+    <form action="/prihlaska/" method="post" class="form">
+      <input
+        type="hidden"
+        name="csrfmiddlewaretoken"
+        value="nYlbuogqs0LcvWOkMtoRw7sivCyWuZkyjXo1yf8nxWHcnSPcFlfQpakjoAz0wYdB"
+      />
 
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_item_0"
+          >Výběr tábora</label
+        >
+        <div class="col-md-9">
+          <div class="form-group">
+            <input
+              type="radio"
+              name="item"
+              value="1"
+              class=""
+              title=""
+              required
+              id="id_item_0"
+            />
+            <label for="id_item_0">Hadinka 2019, První turnus</label>
+            <small class="form-text text-muted">
+              Termín: 1.-10.srpna 2019, Téma: Ufoni na Hadince, Místo: Údolí
+              Hadinka Klokočov, Cena 3950&nbsp;Kč<br />
 
-<!-- Začátek obsahu  -->
+              Zbývá míst 6 ze 59. Tak hurá na to!
+            </small>
+          </div>
 
-<form action="/prihlaska/" method="post" class="form">
+          <div class="form-group">
+            <input
+              type="radio"
+              name="item"
+              value="2"
+              class=""
+              title=""
+              required
+              id="id_item_1"
+            />
+            <label for="id_item_1">Hadinka 2019, Druhý turnus</label>
+            <small class="form-text text-muted">
+              Termín: 10.-20.srpna 2019, Téma: Ufoni na Hadince, Místo: Údolí
+              Hadinka Klokočov, Cena 3950&nbsp;Kč<br />
 
+              Zbývá míst 31 ze 66. Tak hurá na to!
+            </small>
+          </div>
 
-  <input type="hidden" name="csrfmiddlewaretoken"
-    value="iynOkW2Rgiz1O4RxZ0AFS2boStKzeqAgceG6Cj7TK0WnjUuk4fcenzANkwlBawcl">
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_item">Výběr tábora</label>
-    <div class="col-md-9"><select name="item" class="form-control" title="" id="id_item">
-        <option value="1" selected="selected">Tabor 1</option>
+          <div class="form-group">
+            <input
+              type="radio"
+              name="item"
+              value="3"
+              class=""
+              title=""
+              required
+              id="id_item_2"
+            />
+            <label for="id_item_2">Hadinka 2019, Superturnus</label>
+            <small class="form-text text-muted">
+              Termín: 1.-20.srpna 2019, Téma: Ufoni na Hadince, Místo: Údolí
+              Hadinka Klokočov, Cena 6500&nbsp;Kč<br />
 
-        <option value="2">Tabor 2</option>
-
-        <option value="3">Tabor 3</option>
-
-      </select></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="child_name" maxlength="50" class="form-control is-invalid" placeholder="Jméno"
-        title="" required="" id="id_child_name">
-        <div class="invalid-feedback">
-            Zadejte prosím jméno.
-        </div>      
+              Zbývá míst 5 ze 62. Tak hurá na to!
+            </small>
+          </div>
+        </div>
       </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="child_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" required="" id="id_child_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_child_bnumber">Rodné číslo</label>
-    <div class="col-md-9"><input type="text" name="child_bnumber" maxlength="11" class="form-control"
-        placeholder="Rodné číslo" title="" required="" id="id_child_bnumber"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_insurance">Zdravotní pojištovna</label>
-    <div class="col-md-9"><select name="insurance" class="form-control" title="" id="id_insurance">
-      </select></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_street">Ulice a číslo popisné</label>
-    <div class="col-md-9"><input type="text" name="street" maxlength="200" class="form-control"
-        placeholder="Ulice a číslo popisné" title="" id="id_street"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_town">Obec</label>
-    <div class="col-md-9"><input type="text" name="town" maxlength="200" class="form-control" placeholder="Obec"
-        title="" required="" id="id_town"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_zip">PSČ</label>
-    <div class="col-md-9"><input type="text" name="zip" maxlength="6" class="form-control" placeholder="PSČ" title=""
-        required="" id="id_zip"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="adult1_name" maxlength="50" class="form-control" placeholder="Jméno"
-        title="" id="id_adult1_name"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="adult1_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" id="id_adult1_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult1_phone">Telefon</label>
-    <div class="col-md-9"><input type="text" name="adult1_phone" maxlength="9" class="form-control"
-        placeholder="Telefon" title="" id="id_adult1_phone"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_name">Jméno</label>
-    <div class="col-md-9"><input type="text" name="adult2_name" maxlength="50" class="form-control" placeholder="Jméno"
-        title="" id="id_adult2_name"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_surname">Příjmení</label>
-    <div class="col-md-9"><input type="text" name="adult2_surname" maxlength="100" class="form-control"
-        placeholder="Příjmení" title="" id="id_adult2_surname"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_adult2_phone">Telefon</label>
-    <div class="col-md-9"><input type="text" name="adult2_phone" maxlength="9" class="form-control"
-        placeholder="Telefon" title="" id="id_adult2_phone"></div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_email">Email</label>
-    <div class="col-md-9"><input type="email" name="email" maxlength="254" class="form-control" placeholder="Email"
-        title="Na tuto adresu Vám přijde potvrzení a další instrukce." required="" id="id_email">
 
-
-      <small class="form-text text-muted">Na tuto adresu Vám přijde potvrzení a další instrukce.</small>
-
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_note">Jiné důležité údaje</label>
-    <div class="col-md-9"><textarea name="note" cols="40" rows="10" class="form-control"
-        placeholder="Jiné důležité údaje"
-        title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok."
-        id="id_note"></textarea>
-
-
-      <small class="form-text text-muted">Zde můžete sdělit informace,
-        které se nemusí týkat přímo zdravotního stavu a přesto jsou pro
-        bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné
-        ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok.</small>
-
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_agreement">&nbsp;</label>
-    <div class="col-md-9">
-      <div class="form-check"><input type="checkbox" name="agreement" class="form-check-input" required=""
-          id="id_agreement"><label class="form-check-label" for="id_agreement" title="Odkaz na PDF">Souhlasím se
-          smluvními podmínkami</label>
-
-
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-
+      <div class="form-group">
+        <h2>Účastník</h2>
       </div>
-    </div>
-  </div>
-  <div class="form-group row"><label class="col-md-3 col-form-label" for="id_gdpr">&nbsp;</label>
-    <div class="col-md-9">
-      <div class="form-check"><input type="checkbox" name="gdpr" class="form-check-input" required=""
-          id="id_gdpr"><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF">Souhlasím se zpracováním
-          osobních údajů</label>
-
-
-        <small class="form-text text-muted">Odkaz na <a href="#">PDF</a></small>
-
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_child_name">Jméno</label>
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="child_name"
+            maxlength="50"
+            class="form-control"
+            placeholder="Jméno"
+            title=""
+            required
+            id="id_child_name"
+          />
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">
-      Submit
-    </button>
-  </div>
-</form>
-
-
-<!-- Konec obsahu  -->
-
-
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_child_surname"
+          >Příjmení</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="child_surname"
+            maxlength="100"
+            class="form-control"
+            placeholder="Příjmení"
+            title=""
+            required
+            id="id_child_surname"
+          />
+        </div>
       </div>
-      <!-- /.hp-content -->
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_child_bnumber"
+          >Rodné číslo</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="child_bnumber"
+            maxlength="11"
+            class="form-control"
+            placeholder="Rodné číslo"
+            title="Uvádějte ve formátu s lomítkem (XXXXXX/YYYY)"
+            required
+            id="id_child_bnumber"
+          />
 
+          <small class="form-text text-muted"
+            >Uvádějte ve formátu s lomítkem (XXXXXX/YYYY)</small
+          >
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_insurance"
+          >Zdravotní pojištovna</label
+        >
+        <div class="col-md-9">
+          <select
+            name="insurance"
+            class="form-control"
+            title=""
+            id="id_insurance"
+          >
+            <option value="3"
+              >Česká průmyslová zdravotní pojišťovna (205)</option
+            >
 
-    </div><!-- .container -->
+            <option value="4"
+              >Oborová pojišť. zam. bank, pojišťoven a staveb. (207)</option
+            >
 
+            <option value="5">Revírní bratrská pokladna (213)</option>
+
+            <option value="6">Vojenská zdravotní pojišťovna ČR (201)</option>
+
+            <option value="1" selected
+              >Všeobecná zdravotní pojišťovna ČR (111)</option
+            >
+
+            <option value="7">Zaměstnanecká pojišťovna ŠKODA (209)</option>
+
+            <option value="9">Zdravotní pojišťovna MV ČR (211)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_street"
+          >Ulice a číslo popisné</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="street"
+            maxlength="200"
+            class="form-control"
+            placeholder="Ulice a číslo popisné"
+            title=""
+            id="id_street"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_town">Obec</label>
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="town"
+            maxlength="200"
+            class="form-control"
+            placeholder="Obec"
+            title=""
+            required
+            id="id_town"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_zip">PSČ</label>
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="zip"
+            maxlength="6"
+            class="form-control"
+            placeholder="PSČ"
+            title=""
+            required
+            id="id_zip"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>Údaje o rodiči</h2>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult1_name"
+          >Jméno</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult1_name"
+            maxlength="50"
+            class="form-control"
+            placeholder="Jméno"
+            title=""
+            required
+            id="id_adult1_name"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult1_surname"
+          >Příjmení</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult1_surname"
+            maxlength="100"
+            class="form-control"
+            placeholder="Příjmení"
+            title=""
+            required
+            id="id_adult1_surname"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult1_phone"
+          >Telefon</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult1_phone"
+            maxlength="9"
+            class="form-control"
+            placeholder="Telefon"
+            title=""
+            required
+            id="id_adult1_phone"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>Druhá kontaktní osoba (rodič či blízký příbuzný)</h2>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult2_name"
+          >Jméno</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult2_name"
+            maxlength="50"
+            class="form-control"
+            placeholder="Jméno"
+            title=""
+            required
+            id="id_adult2_name"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult2_surname"
+          >Příjmení</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult2_surname"
+            maxlength="100"
+            class="form-control"
+            placeholder="Příjmení"
+            title=""
+            required
+            id="id_adult2_surname"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_adult2_phone"
+          >Telefon</label
+        >
+        <div class="col-md-9">
+          <input
+            type="text"
+            name="adult2_phone"
+            maxlength="9"
+            class="form-control"
+            placeholder="Telefon"
+            title=""
+            required
+            id="id_adult2_phone"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>Ostatní údaje</h2>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_email">Email</label>
+        <div class="col-md-9">
+          <input
+            type="email"
+            name="email"
+            maxlength="254"
+            class="form-control"
+            placeholder="Email"
+            title="Na tuto adresu Vám přijde potvrzení a další instrukce."
+            required
+            id="id_email"
+          />
+
+          <small class="form-text text-muted"
+            >Na tuto adresu Vám přijde potvrzení a další instrukce.</small
+          >
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_note"
+          >Jiné důležité údaje</label
+        >
+        <div class="col-md-9">
+          <textarea
+            name="note"
+            cols="40"
+            rows="10"
+            class="form-control"
+            placeholder="Jiné důležité údaje"
+            title="Zde můžete sdělit informace, které se nemusí týkat přímo zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité. Také zde můžete uvést požadavek na společné ubytování, pokud věkový rozdíl obou dětí není větší než 1 rok."
+            id="id_note"
+          ></textarea>
+
+          <small class="form-text text-muted"
+            >Zde můžete sdělit informace, které se nemusí týkat přímo
+            zdravotního stavu a přesto jsou pro bezpečnou rekreaci důležité.
+            Také zde můžete uvést požadavek na společné ubytování, pokud věkový
+            rozdíl obou dětí není větší než 1 rok.</small
+          >
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_agreement">&#160;</label>
+        <div class="col-md-9">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="agreement"
+              class="form-check-input"
+              required
+              id="id_agreement"
+            /><label
+              class="form-check-label"
+              for="id_agreement"
+              title="Odkaz na PDF"
+              >Souhlasím se smluvními podmínkami</label
+            >
+
+            <small class="form-text text-muted"
+              >Odkaz na
+              <a
+                href="https://drive.google.com/open?id=1nIFyTXXkRpVJk3GPirnav8EH9W3Db3G-"
+                >PDF</a
+              ></small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_gdpr">&#160;</label>
+        <div class="col-md-9">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="gdpr"
+              class="form-check-input"
+              required
+              id="id_gdpr"
+            /><label class="form-check-label" for="id_gdpr" title="Odkaz na PDF"
+              >Souhlasím se zpracováním osobních údajů</label
+            >
+
+            <small class="form-text text-muted"
+              >Odkaz na
+              <a
+                href="https://drive.google.com/open?id=1167nz_WRUlB1mCy9ctYTcPoedMQbAKBT"
+                >PDF</a
+              ></small
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Odeslat přihlášku</button>
+      </div>
+    </form>
+
+    <!-- Konec obsahu  -->
+  </div>
+  <!-- /.hp-content -->
+</div>
+<!-- .container -->
 
 <!-- Paticka -->
 <footer class="hp-foot" role="contentinfo">
@@ -215,7 +501,7 @@
 
   </div>
 
-</footer><!-- /.hp-foot -->     
+</footer><!-- /.hp-foot --> 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
