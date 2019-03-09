@@ -1,0 +1,39 @@
+// !important --> Needed for BS overwrite
+
+
+// Max widths
+
+.maxw-130px {
+  max-width: 130px !important; // Needed for BS overwrite
+}
+
+
+// Text without spacing
+
+.text-without-spacing {
+  p,
+  ul,
+  ol,
+  li {
+    margin-bottom: 0 !important;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+  }
+
+  li::before {
+    content: "•";
+    position: absolute;
+    left: -0.6rem;
+    top: 0;
+  }
+
+  ul,
+  ol {
+    padding-left: 0;
+    list-style-type: none;
+    list-style-position: inside;        
+  }
+}
