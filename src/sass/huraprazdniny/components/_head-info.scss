@@ -1,0 +1,53 @@
+// Head Info
+
+.hp-head-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: $h4-font-size;
+}
+
+.hp-head-info ul {
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.hp-head-info li {
+  text-align: center;
+  width: 195px;
+  border-left: 1px solid transparentize($color: $body-color, $amount: 0.5);
+
+  &:first-child {
+    border-left: 0;
+  }
+}
+
+// Smaller screens
+
+@media screen and (max-width: 650px) {
+  .hp-head-info {
+    font-size: $font-size-base;
+  }
+  
+  .hp-head-info li {  
+    width: 120px;
+  }
+}
+
+// Extra small displays
+
+@media screen and (max-width: 359px) {
+  .hp-head-info ul {
+    flex-direction: column;
+  }
+
+  .hp-head-info li {
+    border-left: 0;
+    border-top: 1px solid transparentize($color: $body-color, $amount: 0.5);
+    padding: 1rem;
+  
+    &:first-child {
+      border-top: 0;
+    }
+  }  
+}
+
