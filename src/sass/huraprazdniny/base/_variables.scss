@@ -63,3 +63,8 @@ $input-padding-x: $hp-padding-x;
 // Buttons
 
 $btn-border-radius: $border-radius; // Changing only $border-radius does not work
+
+// Nav tabs
+
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: $border-radius;
