@@ -16,6 +16,37 @@ body {
   background: $white;
 }
 
+// Navtabs:
+// - bigger font-size
+// - responsive
+
 .nav-tabs {
   font-size: $h4-font-size;
+}
+
+@include media-breakpoint-down(sm) {
+  .nav-tabs {
+    font-size: $font-size-base;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .nav-tabs .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-tabs .nav-link {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }  
+}  
+
+// Headings
+// - smaller on xs screens
+
+h1, 
+.h1 {
+  @include media-breakpoint-down(xs) {
+    font-size: ($h1-font-size * 0.75);
+  }
 }
