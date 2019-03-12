@@ -1,0 +1,13 @@
+// HP web: Badge
+
+
+.hp-badge {
+  display: inline-block;
+  background-color: $white;
+  // TODO does not work:
+  // color: map-get($theme-colors, $success); 
+  color: #4bdbc4;
+  font-style: normal;
+  padding: 0.5em 1em;
+  border-radius: $border-radius-lg;
+}

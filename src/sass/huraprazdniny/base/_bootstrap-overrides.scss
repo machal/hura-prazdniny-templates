@@ -7,6 +7,8 @@ body {
   background-size: 1250px auto;
 }
 
+// Buttons
+
 .btn-primary {
   color: $white;
 }
@@ -14,6 +16,25 @@ body {
 .btn-inverted {
   color: $link-color;
   background: $white;
+}
+
+.btn-disabled {
+  color: $white;
+  background: $body-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}
+
+// Colors
+
+// Utility does not work 
+
+.bg-light {
+  background: $body-bg !important;
 }
 
 // Navtabs:
@@ -50,3 +71,4 @@ h1,
     font-size: ($h1-font-size * 0.75);
   }
 }
+
