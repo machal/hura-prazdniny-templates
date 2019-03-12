@@ -1,4 +1,4 @@
-<div class="hp-tabs" aria-labelledby="nav-tabor">
+<div class="hp-tabs" aria-labelledby="nav-tabor" role="tablist">
   <h2 class="sr-only" id="nav-tabor">
     Navigace k táboru
   </h2>
@@ -7,27 +7,32 @@
       MM: aktivni polozka ma tridu .active
     -->
     <li class="nav-item">
-        <a class="nav-link active" href="tabor-info.html">
-            Info
+        <a href="#tab-info" id="hp-tab-info" aria-controls="info" aria-selected="true"
+           class="nav-link active" data-toggle="tab" role="tab">
+           Info
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tabor-tym.html">
+        <a href="#tab-tym" id="hp-tab-tym" aria-controls="tym" aria-selected="false"
+           class="nav-link" data-toggle="tab" role="tab">
           Tým
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tabor-deti.html">
+        <a href="#tab-deti" id="hp-tab-deti" aria-controls="deti" aria-selected="false"
+           class="nav-link" data-toggle="tab" role="tab">
           Děti
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tabor-oddily.html">
+        <a href="#tab-oddily" id="hp-tab-oddily" aria-controls="oddily" aria-selected="false"
+          class="nav-link" data-toggle="tab" role="tab">
           Oddíly
         </a>
       </li>    
       <li class="nav-item">
-        <a class="nav-link" href="tabor-fotky.html">
+        <a href="#tab-fotky" id="hp-tab-fotky" aria-controls="fotky" aria-selected="false"
+          class="nav-link" data-toggle="tab" role="tab">
           Fotky
         </a>
       </li>    
@@ -35,7 +40,8 @@
       MM: schovana polozka je .disabled a ma zaporny tabindex a aria-disabled
     -->
       <li class="nav-item">
-        <a class="nav-link disabled" href="tabor-video.html" tabindex="-1" aria-disabled="true">
+        <a href="#tab-videa" id="tab-videa" aria-controls="videa" aria-selected="false"
+          class="nav-link disabled"  tabindex="-1" aria-disabled="true" data-toggle="tab" role="tab">
             Videa
         </a>
       </li>

@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <title></title>
+  </head>
+  <body>
+<!-- Navigace -->
+<nav class="hp-navmain" role="navigation">
+  <!-- Logo -->
+  <p class="hp-navmain__center">
+    <a href="index.html" class="hp-navmain__center-logo">
+      <img src="dist/svg/hrp-logo.svg" alt="Hurá prázdniny" class="img-fluid">
+    </a>
+  </p>
+  <!-- Domu a nabidka taboru -->
+  <p class="hp-navmain__left">
+    <a href="index.html" class="hp-navmain__left-home btn btn-secondary btn-inverted">
+      <img src="dist/svg/home.svg" alt="Domů" class="hp-navmain__left-img">
+    </a>
+    <a href="index.html" class="hp-navmain__left-camps btn btn-secondary btn-inverted">
+      <span class="d-none d-sm-inline">Nabídka táborů</span>
+      <span class="d-inline d-sm-none">Tábory</span>
+    </a>
+  </p>
+  <!-- Prihlaska -->
+  <p class="hp-navmain__right">
+    <a href="#" class="hp-navmain__right-form btn btn-primary">Přihláška</a>
+  </p>
+</nav>
+<!-- /.hp-navmain -->
+<div class="hp-head">
+  <p class="hp-head__preheading h2">
+    Dětský tábor
+  </p>
+  <h1 class="hp-head__heading">
+    Hadinka 2019
+  </h1>
+  <p class="hp-head__postheading h3">
+    První turnus
+  </p>
+</div>
+
+<div class="hp-head-info" aria-labelledby="heading-info">
+  <h2 class="sr-only" id="heading-info">
+    Informace o táboře
+  </h2>
+  <ul class="list-unstyled">
+    <li class="hp-head-info__item">
+      <strong class="text-success font-weight-normal">
+        Téma
+      </strong>
+      <br>
+      Ufoni na<br> 
+      Hadince
+    </li>
+    <li class="hp-head-info__item">
+      <strong class="text-success font-weight-normal">
+        Termín
+      </strong>
+      <br>
+      1/8 - 10/8<br> 
+      2019
+    </li>
+    <li class="hp-head-info__item">
+      <strong class="text-success font-weight-normal">
+        Místo
+      </strong>
+      <br>
+      Údolí Hadinka<br>
+      Klokočov
+    </li>
+  </ul>  
+</div>
+
+    <div class="container">        
+
+<div class="hp-tabs" aria-labelledby="nav-tabor" role="tablist">
+  <h2 class="sr-only" id="nav-tabor">
+    Navigace k táboru
+  </h2>
+  <ul class="nav nav-tabs justify-content-center">
+    <!--  
+      MM: aktivni polozka ma tridu .active
+    -->
+    <li class="nav-item">
+        <a href="#tab-info" id="hp-tab-info" aria-controls="info" aria-selected="true"
+           class="nav-link active" data-toggle="tab" role="tab">
+           Info
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab-tym" id="hp-tab-tym" aria-controls="tym" aria-selected="false"
+           class="nav-link" data-toggle="tab" role="tab">
+          Tým
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab-deti" id="hp-tab-deti" aria-controls="deti" aria-selected="false"
+           class="nav-link" data-toggle="tab" role="tab">
+          Děti
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab-oddily" id="hp-tab-oddily" aria-controls="oddily" aria-selected="false"
+          class="nav-link" data-toggle="tab" role="tab">
+          Oddíly
+        </a>
+      </li>    
+      <li class="nav-item">
+        <a href="#tab-fotky" id="hp-tab-fotky" aria-controls="fotky" aria-selected="false"
+          class="nav-link" data-toggle="tab" role="tab">
+          Fotky
+        </a>
+      </li>    
+    <!--  
+      MM: schovana polozka je .disabled a ma zaporny tabindex a aria-disabled
+    -->
+      <li class="nav-item">
+        <a href="#tab-videa" id="tab-videa" aria-controls="videa" aria-selected="false"
+          class="nav-link disabled"  tabindex="-1" aria-disabled="true" data-toggle="tab" role="tab">
+            Videa
+        </a>
+      </li>
+    </ul>
+</div>
+      <div class="hp-content">
+
+<!-- Začátek obsahu  -->
+
+        <div class="tab-content" id="myTabContent">
+
+<!-- 
+  MM: Úvodní tab má třídy .show.active
+-->
+<div id="tab-info" aria-labelledby="info-tab" class="tab-pane fade show active" role="tabpanel">
+
+<!-- Začátek obsahu  -->
+
+<!-- 
+  MM: Úvodní text a fotky
+-->
+<div class="text-center mb-5">
+
+    <h1 class="h2 mb-4 mb-5">
+      Informace o táboře
+    </h1>
+
+    <ul class="row list-unstyled mb-4">
+      <li class="col col-6 col-sm-3 px-1 mb-2 mb-0-sm">
+        <img src="dist/content-img/foto1.jpg" alt="" width="400" height="400" class="img-fluid">
+      </li>
+      <li class="col col-6 col-sm-3 px-1 mb-2 mb-0-sm">
+        <img src="dist/content-img/foto2.jpg" alt="" width="400" height="400" class="img-fluid">
+      </li>
+      <li class="col col-6 col-sm-3 px-1">
+        <img src="dist/content-img/foto3.jpg" alt="" width="400" height="400" class="img-fluid">
+      </li>
+      <li class="col col-6 col-sm-3 px-1">
+        <img src="dist/content-img/foto4.jpg" alt="" width="400" height="400" class="img-fluid">
+      </li>                                          
+    </ul>
+
+    <div class="mx-md-5">
+      <h2 class="h3 mb-3">
+        Areál tábor se nachází v malebném údolí Hadinka
+        přiléhajícím k obci Klokočov u Vítkova. Je obklopený lesy,
+        říčkou Budišovkou a nebeským klidem.
+      </h2>
+
+      <p>
+        Děti jsou rozděleny do 6ti oddílů podle věku. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum orci non mi dapibus, venenatis luctus justo ullamcorper. Nulla blandit, libero vitae iaculis ullamcorper, libero ligula viverra ex, nec fermentum urna leo vitae erat. In quis velit nec dolor ultricies aliquam. Morbi auctor quis diam cursus elementum.
+      </p>              
+    </div>
+
+</div><!-- .text-center -->
+
+<!-- 
+  MM: Seznam s ikonami
+-->
+
+<div aria-labelledby="heading-icons" class="text-center">
+  <h2 class="sr-only" id="heading-icons">
+    Rozcestník odkazů
+  </h2>
+  <ul class="row list-unstyled">          
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/doprava.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Doprava
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate expedita possimus alias saepe doloribus unde molestiae amet placeat tempore reiciendis, quis vel quam perspiciatis commodi atque ex enim cupiditate illo.
+        </p>
+      </div>
+    </li>
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/vzkazovnik.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Vzkazovník
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate <a href="#">expedita possimus alias saepe</a> doloribus unde molestiae amet.
+        </p>
+      </div>
+    </li>          
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/fotky-videa.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Fotky a videa
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum. Voluptate expedita possimus alias saepe doloribus unde molestiae amet placeat tempore reiciendis, quis vel quam perspiciatis commodi atque ex enim cupiditate illo.
+        </p>
+      </div>
+    </li>
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/kontakty.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Kontakty
+      </h3>
+      <!--  
+        MM: formátování textu
+        Tady předpokládám, že sem bude Liba dávat jednoduché HTML, takže vše
+        styluju přes rodiče .text-without-spacing.
+        Může tady být p, ul, ol, a.
+      -->
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate expedita possimus alias.
+        </p>
+        <ul>
+          <li>
+            Voluptate expedita possimus
+          </li>
+          <li>
+            Doloribus unde molestiae amet
+          </li>
+          <li>
+            Dlaceat tempore reiciendis
+          </li>                                    
+        </ul>                
+      </div>
+    </li>
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/dokumenty.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Dokumenty
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <ul>
+          <li>
+            <a href="#">
+              Voluptate expedita possimus
+            </a>                    
+          </li>
+          <li>
+            <a href="#">
+              Doloribus unde molestiae amet
+            </a>                    
+          </li>
+          <li>
+            <a href="#">
+              Dlaceat tempore reiciendis
+            </a>                    
+          </li>                                    
+        </ul>
+      </div>
+    </li>          
+    <li class="col col-12 col-sm-6 col-lg-4 px-sm-4 mb-4">
+      <img class="display-block img-fluid maxw-130px mb-3" src="dist/svg/posta.svg" alt="" width="300" height="300">
+      <h3 class="text-success mb-0">
+        Pošta
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate expedita possimus alias saepe doloribus unde molestiae amet placeat tempore reiciendis, quis vel quam perspiciatis commodi atque ex enim cupiditate illo.
+        </p>
+      </div>
+    </li>            
+  </ul>
+  <!-- /.row list-unstyled -->
+
+</div><!-- heading-icons -->
+
+
+
+<!-- / Konec obsahu  -->
+
+</div>
+<div id="tab-tym" aria-labelledby="tym-tab" class="tab-pane fade" role="tabpanel">
+
+<!-- Začátek obsahu  -->
+
+<h1 class="text-center h2 mb-5">
+  Táborový tým
+</h1>
+
+<div class="text-center">
+  <ul class="row list-unstyled">
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=1"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Jirka Libánský
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          vedení tábora<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=2"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Albert Čuba
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          svačinář a nástěnkář<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=3"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Ivo Sauerstrom
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          oddílový vedoucí<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>        
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <img
+          class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+          src="http://i.pravatar.cc/300?u=4"
+          alt=""
+          width="300"
+          height="300"
+        />
+        <h3 class="text-success mb-0 h5">
+          Jirka Libánský
+        </h3>
+        <div class="text-without-spacing">
+          <p>
+            vedení tábora<br>
+            <a href="#">
+              Poslat vzkaz
+            </a>
+          </p>
+        </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=5"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Ivo Sauerstrom
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          oddílový vedoucí<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>                
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=6"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Albert Čuba
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          svačinář a nástěnkář<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=11"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Jirka Libánský
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          vedení tábora<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=12"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Albert Čuba
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          svačinář a nástěnkář<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=13"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Ivo Sauerstrom
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          oddílový vedoucí<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>        
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <img
+          class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+          src="http://i.pravatar.cc/300?u=14"
+          alt=""
+          width="300"
+          height="300"
+        />
+        <h3 class="text-success mb-0 h5">
+          Jirka Libánský
+        </h3>
+        <div class="text-without-spacing">
+          <p>
+            vedení tábora<br>
+            <a href="#">
+              Poslat vzkaz
+            </a>
+          </p>
+        </div>
+    </li>
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=15"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Ivo Sauerstrom
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          oddílový vedoucí<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>                
+    <li class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+      <img
+        class="display-block img-fluid maxw-120px mb-3 rounded-circle"
+        src="http://i.pravatar.cc/300?u=16"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <h3 class="text-success mb-0 h5">
+        Albert Čuba
+      </h3>
+      <div class="text-without-spacing">
+        <p>
+          svačinář a nástěnkář<br>
+          <a href="#">
+            Poslat vzkaz
+          </a>
+        </p>
+      </div>
+    </li>
+
+  </ul>      
+</div>
+
+<!-- / Konec obsahu  -->
+
+</div>
+<div id="tab-deti" aria-labelledby="deti-tab" class="tab-pane fade" role="tabpanel">
+
+  <h1 class="text-center h2  mb-5">
+    Děti
+  </h1>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptas minima iusto fugiat quam, rerum, reprehenderit cumque asperiores id in expedita fuga, amet eos! Dolore consequatur assumenda atque culpa doloremque?
+  </p>
+
+</div>
+<div id="tab-oddily" aria-labelledby="oddily-tab" class="tab-pane fade" role="tabpanel">
+
+  <h1 class="text-center h2  mb-5">
+    Oddíly
+  </h1>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptas minima iusto fugiat quam, rerum, reprehenderit cumque asperiores id in expedita fuga, amet eos! Dolore consequatur assumenda atque culpa doloremque?
+  </p>
+
+</div>
+<div id="tab-fotky" aria-labelledby="fotky-tab" class="tab-pane fade" role="tabpanel">
+
+  <h1 class="text-center h2  mb-5">
+    Fotky
+  </h1>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptas minima iusto fugiat quam, rerum, reprehenderit cumque asperiores id in expedita fuga, amet eos! Dolore consequatur assumenda atque culpa doloremque?
+  </p>
+
+</div>
+
+        </div>  
+        <!-- /.tab-content -->
+
+<!-- / Konec obsahu  -->
+
+      </div>
+      <!-- /.hp-content -->
+
+    </div><!-- .container -->
+
+<!-- Paticka -->
+<footer class="hp-foot" role="contentinfo">
+
+  <div class="hp-foot__wave"></div>
+
+  <div class="container">
+      
+    <p class="hp-foot__logo">
+      <a href="#" class="hp-foot__logo-anchor">
+        <img src="dist/svg/hrp-logo-triradkove.svg?2" alt="Hurá prádzniny" class="img-fluid">
+      </a>
+    </p> 
+
+    <p class="hp-foot__text-large">
+        Stránky provozuje spolek Hurá prázdniny.
+        <br>
+        Přes 20 let pořádáme oblíbené dětské tábory.
+        <br>
+        Vaše dotazy rádi zodpovíme na 
+        <a href="mailto:info@huraprazdniny.cz?subject=Dotaz%20z%20webu&body=Dobr%C3%BD%20den%2C%0A%0A">info@huraprazdniny.cz</a>
+        <br> nebo na telefonu 
+        <strong class="hp-foot__phone">606 643 700</strong>.
+    </p>
+
+    <p class="hp-foot__text-small">
+      Hurá prázdniny z.s. se sídlem Rekreační 2126/7, Poruba, 708 00 Ostrava, IČO 1348388, datová schránka: d5e27n6
+      <br>
+      <a href="#">Stanovy</a> — 
+      <a href="#">Táborový řád</a> — 
+      <a href="#">Archiv táborů</a> — 
+      <a href="#">Napište nám</a>
+      <br>
+      <a href="#">Facebook</a> — 
+      <a href="#">Instagram</a> — 
+      <a href="#">Transparentní účet</a>
+    </p>
+
+  </div>
+
+</footer><!-- /.hp-foot -->     
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
