@@ -14,7 +14,7 @@
 .hp-head-info li {
   text-align: center;
   width: 195px;
-  border-left: 1px solid transparentize($color: $body-color, $amount: 0.5);
+  border-left: 1px solid transparentize($color: $body-color, $amount: 0.75);
 
   &:first-child {
     border-left: 0;
