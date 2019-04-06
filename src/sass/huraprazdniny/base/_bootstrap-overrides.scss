@@ -45,6 +45,18 @@ body {
   font-size: $h4-font-size;
 }
 
+.nav-tabs .nav-item {
+  margin-left: 0.25rem;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.nav-tabs .nav-link {
+  background-color: rgba(#fff, 0.5);
+}
+
 @include media-breakpoint-down(sm) {
   .nav-tabs {
     font-size: $font-size-base;
