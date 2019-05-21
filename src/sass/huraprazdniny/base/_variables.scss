@@ -27,6 +27,8 @@ $theme-colors: (
 $link-color:  #ff6e56;
 $link-hover-color: darken($link-color, 10%);
 
+$border-color: transparentize($color: $body-color, $amount: 0.75);
+
 // Fonts
 
 $font-family-base: 'Hadinka', sans-serif;
@@ -68,3 +70,8 @@ $btn-border-radius: $border-radius-lg; // Changing only $border-radius does not 
 
 $nav-tabs-border-width: 0;
 $nav-tabs-border-radius: $border-radius;
+
+// Tables
+
+$table-border-color: $border-color;
+$table-accent-bg: transparentize($color: $body-color, $amount: 0.95);

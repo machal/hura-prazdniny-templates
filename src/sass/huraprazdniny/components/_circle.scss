@@ -1,0 +1,19 @@
+// HP web: Circle
+
+
+.hp-circle {
+  display: inline-flex;  
+  width: 2rem;
+  height: 2rem;
+  line-height: 1rem;  
+  border: 1px solid $link-color;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.table .hp-circle {
+  position: relative;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
