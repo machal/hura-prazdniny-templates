@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="dist/css/style.css?3">
+    <link rel="stylesheet" href="dist/css/style.css?4">
+    <link rel="stylesheet" href="dist/fancybox/fancybox.css?4">
+    
+    <script src="dist/js/jquery.js" defer></script>
+    <script src="dist/js/fancybox.js" defer></script>
+    <script src="dist/js/index.js" defer></script>
 
     <title></title>
   </head>
@@ -555,882 +560,1236 @@
 <!-- / Konec obsahu  -->
 
 </div>
-<div id="tab-deti" aria-labelledby="deti-tab" class="tab-pane fade" role="tabpanel">
-
+<div
+  id="tab-deti"
+  aria-labelledby="deti-tab"
+  class="tab-pane fade"
+  role="tabpanel"
+>
   <h1 class="text-center h2  mb-5">
     Děti
   </h1>
 
   <table class="table table-striped">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th scope="col" class="text-left">Příjmení a jméno</th>
         <th scope="col" class="text-center">Číslo oddílu</th>
         <th scope="col" class="text-center">Kontaktní formulář</th>
       </tr>
     </thead>
-  
+
     <tbody>
       <tr>
-        <td class="text-left">Babica Tomáš </td>
+        <td class="text-left">Babica Tomáš</td>
         <td class="text-center" class="boy">
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1130">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1130"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Babincová Zuzana</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1123">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1123"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Bartoň Matyáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1119">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1119"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Bartoňová Tereza </td>
+        <td class="text-left">Bartoňová Tereza</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1120">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1120"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Basistová Terezie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1108">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1108"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Bittnerová Veronika</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1111">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1111"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Bordovský Adam</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1138">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1138"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Bordovský Jonáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1135">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1135"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Braš Filip</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1151">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1151"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Brosch Ondřej</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1128">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1128"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Bulandová Eliška</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1127">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1127"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Cakl Hynek</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1099">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1099"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Chromíková Barbora</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1109">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1109"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Dvořák Andrej</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1174">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1174"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">FRYDRYŠEK VOJTĚCH</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1153">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1153"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Frydryšek Jakub</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1140">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1140"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Glos Dominik</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1121">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1121"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Hedánková Viktorie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1134">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1134"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Horáková Alžběta</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1177">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1177"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Hruba Natalie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1146">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1146"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Jachanová Tereza</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1137">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1137"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Kaliský Filip</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1178">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1178"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Karas David</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1122">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1122"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Kilian Filip </td>
+        <td class="text-left">Kilian Filip</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1147">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1147"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Kilian Jakub</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1142">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1142"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Kilian Jáchym</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1161">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1161"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Košek jan</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1150">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1150"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Košková Teresa</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1158">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1158"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Krayzel Matyáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1097">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1097"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Krayzel Šimon</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1098">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1098"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Maraite Emma</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1167">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1167"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Mikula Sebastian </td>
+        <td class="text-left">Mikula Sebastian</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1132">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1132"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Mikulova Sara</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1155">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1155"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Nerud Matěj</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1143">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1143"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Nevolová Anna</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1141">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1141"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Náčin Tomáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1103">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1103"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Pavlitová Vája</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1100">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1100"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Páleníková Zuzana </td>
+        <td class="text-left">Páleníková Zuzana</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1131">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1131"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Raidová Lucie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1156">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1156"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Rosa Maxmilián</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1149">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1149"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Ruskinová Elizabeth</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1172">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1172"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Samková Magdaléna </td>
+        <td class="text-left">Samková Magdaléna</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1164">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1164"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Schindlerová Petra </td>
+        <td class="text-left">Schindlerová Petra</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1114">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1114"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Smyčková Anna</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1129">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1129"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Sobek Tomáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1173">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1173"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Sobková Tereza</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1165">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1165"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Stoklásková Sára</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1152">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1152"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Stracená Ema</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1136">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1136"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Svitičová Nina</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1160">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1160"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Svitičová julie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1133">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1133"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Svoboda Josef</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1145">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1145"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Svoboda Vojta</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1144">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1144"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Szwanczarová Eliška</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1166">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1166"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Tesarkova Michaela</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1139">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1139"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Tkáč Robin </td>
+        <td class="text-left">Tkáč Robin</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1176">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1176"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Tkáč Viktor</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1175">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1175"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Tschirkova Nikola</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1163">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1163"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Tydlačková Zuzana</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1112">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1112"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Urbánek Marek</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1107">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1107"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Valášek David</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1116">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1116"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Valášek Jakub</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1117">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1117"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Valášková Sofie</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1118">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1118"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Veselá Kristýna </td>
+        <td class="text-left">Veselá Kristýna</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1169">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1169"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Veselý Patrik</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1171">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1171"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Večerek David</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">1</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">1</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1170">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1170"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
-        <td class="text-left">Vrožinová Adéla </td>
+        <td class="text-left">Vrožinová Adéla</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1154">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1154"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Vrožinová Bára</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1148">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1148"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">wozniak Tomáš</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1159">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1159"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Čuba Daniel</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1106">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1106"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Čubová Beata</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">4</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">4</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1102">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1102"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Čubová Eliška</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1105">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1105"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Čubová Sabina</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1101">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1101"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Šenková Karolina</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1115">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1115"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Škaler Filip</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">3</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">3</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1126">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1126"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Škaler Kajetán</td>
         <td class="text-center" class="boy">
-  
-          <a href="#taborove-oddily"  class="hp-circle">5</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">5</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1125">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1125"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Škalerová Eli</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1124">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1124"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Žáková Eliška</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">6</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">6</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1110">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1110"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
+
       <tr>
         <td class="text-left">Žáčková Vendula</td>
         <td class="text-center" class="girl">
-  
-          <a href="#taborove-oddily"  class="hp-circle">2</a>
-  
+          <a href="#taborove-oddily" class="btn btn-inverted btn-circle">2</a>
         </td>
-        <td class="text-center"><a class="write_letter" href="#letter" id="people-child-1096">Poslat vzkaz</a>
+        <td class="text-center">
+          <a class="btn btn-inverted" href="#letter" id="people-child-1096"
+            >Poslat vzkaz</a
+          >
         </td>
       </tr>
-  
     </tbody>
   </table>
 
+  <div id="letter">
+    <h2 id="zprava">Vzkazovník</h2>
+
+    <form action="" method="post">
+      <div style="display:none">
+        <input
+          type="hidden"
+          name="csrfmiddlewaretoken"
+          value="788b3334e28821f842af18c25bd25316"
+        />
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_to"
+          >Adresát:</label>
+        <div class="col-md-9">
+          <select name="to" id="id_to" class="form-control">
+            <option value="people-child-1130" 
+              >Babica Tomáš (oddíl č.1)</option
+            >
+            <option value="people-child-1123"
+              >Babincová Zuzana (oddíl č.2)</option
+            >
+            <option value="people-child-1119"
+              >Bartoň Matyáš (oddíl č.3)</option
+            >
+            <option value="people-child-1120"
+              >Bartoňová Tereza (oddíl č.6)</option
+            >
+            <option value="people-child-1108"
+              >Basistová Terezie (oddíl č.4)</option
+            >
+            <option value="people-child-1111"
+              >Bittnerová Veronika (oddíl č.6)</option
+            >
+            <option value="people-child-1138"
+              >Bordovský Adam (oddíl č.1)</option
+            >
+            <option value="people-child-1135"
+              >Bordovský Jonáš (oddíl č.3)</option
+            >
+            <option value="people-child-1151">Braš Filip (oddíl č.1)</option>
+            <option value="people-child-1128"
+              >Brosch Ondřej (oddíl č.1)</option
+            >
+            <option value="people-child-1127"
+              >Bulandová Eliška (oddíl č.4)</option
+            >
+            <option value="people-child-1099">Cakl Hynek (oddíl č.3)</option>
+            <option value="people-child-1109"
+              >Chromíková Barbora (oddíl č.4)</option
+            >
+            <option value="people-child-1174"
+              >Dvořák Andrej (oddíl č.5)</option
+            >
+            <option value="people-child-1153"
+              >FRYDRYŠEK VOJTĚCH (oddíl č.3)</option
+            >
+            <option value="people-child-1140"
+              >Frydryšek Jakub (oddíl č.1)</option
+            >
+            <option value="people-child-1121"
+              >Glos Dominik (oddíl č.5)</option
+            >
+            <option value="people-child-1134"
+              >Hedánková Viktorie (oddíl č.2)</option
+            >
+            <option value="people-child-1177"
+              >Horáková Alžběta (oddíl č.4)</option
+            >
+            <option value="people-child-1146"
+              >Hruba Natalie (oddíl č.4)</option
+            >
+            <option value="people-child-1137"
+              >Jachanová Tereza (oddíl č.2)</option
+            >
+            <option value="people-child-1178"
+              >Kaliský Filip (oddíl č.1)</option
+            >
+            <option value="people-child-1122">Karas David (oddíl č.1)</option>
+            <option value="people-child-1147"
+              >Kilian Filip (oddíl č.1)</option
+            >
+            <option value="people-child-1142"
+              >Kilian Jakub (oddíl č.3)</option
+            >
+            <option value="people-child-1161"
+              >Kilian Jáchym (oddíl č.5)</option
+            >
+            <option value="people-child-1150">Košek jan (oddíl č.3)</option>
+            <option value="people-child-1158"
+              >Košková Teresa (oddíl č.6)</option
+            >
+            <option value="people-child-1097"
+              >Krayzel Matyáš (oddíl č.5)</option
+            >
+            <option value="people-child-1098"
+              >Krayzel Šimon (oddíl č.5)</option
+            >
+            <option value="people-child-1167"
+              >Maraite Emma (oddíl č.4)</option
+            >
+            <option value="people-child-1132"
+              >Mikula Sebastian (oddíl č.5)</option
+            >
+            <option value="people-child-1155"
+              >Mikulova Sara (oddíl č.4)</option
+            >
+            <option value="people-child-1143">Nerud Matěj (oddíl č.1)</option>
+            <option value="people-child-1141"
+              >Nevolová Anna (oddíl č.4)</option
+            >
+            <option value="people-child-1103">Náčin Tomáš (oddíl č.1)</option>
+            <option value="people-child-1100"
+              >Pavlitová Vája (oddíl č.2)</option
+            >
+            <option value="people-child-1131"
+              >Páleníková Zuzana (oddíl č.2)</option
+            >
+            <option value="people-child-1156"
+              >Raidová Lucie (oddíl č.2)</option
+            >
+            <option value="people-child-1149"
+              >Rosa Maxmilián (oddíl č.3)</option
+            >
+            <option value="people-child-1172"
+              >Ruskinová Elizabeth (oddíl č.4)</option
+            >
+            <option value="people-child-1164"
+              >Samková Magdaléna (oddíl č.2)</option
+            >
+            <option value="people-child-1114"
+              >Schindlerová Petra (oddíl č.2)</option
+            >
+            <option value="people-child-1129"
+              >Smyčková Anna (oddíl č.2)</option
+            >
+            <option value="people-child-1173">Sobek Tomáš (oddíl č.3)</option>
+            <option value="people-child-1165"
+              >Sobková Tereza (oddíl č.2)</option
+            >
+            <option value="people-child-1152"
+              >Stoklásková Sára (oddíl č.4)</option
+            >
+            <option value="people-child-1136"
+              >Stracená Ema (oddíl č.6)</option
+            >
+            <option value="people-child-1160"
+              >Svitičová Nina (oddíl č.6)</option
+            >
+            <option value="people-child-1133"
+              >Svitičová julie (oddíl č.2)</option
+            >
+            <option value="people-child-1145"
+              >Svoboda Josef (oddíl č.5)</option
+            >
+            <option value="people-child-1144"
+              >Svoboda Vojta (oddíl č.1)</option
+            >
+            <option value="people-child-1166"
+              >Szwanczarová Eliška (oddíl č.6)</option
+            >
+            <option value="people-child-1139"
+              >Tesarkova Michaela (oddíl č.6)</option
+            >
+            <option value="people-child-1176">Tkáč Robin (oddíl č.5)</option>
+            <option value="people-child-1175">Tkáč Viktor (oddíl č.3)</option>
+            <option value="people-child-1163"
+              >Tschirkova Nikola (oddíl č.4)</option
+            >
+            <option value="people-child-1112"
+              >Tydlačková Zuzana (oddíl č.2)</option
+            >
+            <option value="people-child-1107"
+              >Urbánek Marek (oddíl č.1)</option
+            >
+            <option value="people-child-1116"
+              >Valášek David (oddíl č.1)</option
+            >
+            <option value="people-child-1117"
+              >Valášek Jakub (oddíl č.3)</option
+            >
+            <option value="people-child-1118"
+              >Valášková Sofie (oddíl č.6)</option
+            >
+            <option value="people-child-1169"
+              >Veselá Kristýna (oddíl č.6)</option
+            >
+            <option value="people-child-1171"
+              >Veselý Patrik (oddíl č.5)</option
+            >
+            <option value="people-child-1170"
+              >Večerek David (oddíl č.1)</option
+            >
+            <option value="people-child-1154"
+              >Vrožinová Adéla (oddíl č.6)</option
+            >
+            <option value="people-child-1148"
+              >Vrožinová Bára (oddíl č.4)</option
+            >
+            <option value="people-child-1159"
+              >wozniak Tomáš (oddíl č.3)</option
+            >
+            <option value="people-child-1106">Čuba Daniel (oddíl č.5)</option>
+            <option value="people-child-1102"
+              >Čubová Beata (oddíl č.4)</option
+            >
+            <option value="people-child-1105"
+              >Čubová Eliška (oddíl č.6)</option
+            >
+            <option value="people-child-1101"
+              >Čubová Sabina (oddíl č.2)</option
+            >
+            <option value="people-child-1115"
+              >Šenková Karolina (oddíl č.2)</option
+            >
+            <option value="people-child-1126"
+              >Škaler Filip (oddíl č.3)</option
+            >
+            <option value="people-child-1125"
+              >Škaler Kajetán (oddíl č.5)</option
+            >
+            <option value="people-child-1124"
+              >Škalerová Eli (oddíl č.2)</option
+            >
+            <option value="people-child-1110"
+              >Žáková Eliška (oddíl č.6)</option
+            >
+            <option value="people-child-1096"
+              >Žáčková Vendula (oddíl č.2)</option
+            >
+            <option value="people-adult-35">Daniela Ondřejová</option>
+            <option value="people-adult-38">Daniel Adámek</option>
+            <option value="people-adult-28">Martina Kaňáková</option>
+            <option value="people-adult-32">Zuzana Houdková</option>
+            <option value="people-adult-40">Jan Bobr Šembera</option>
+            <option value="people-adult-9">Martin Pančocha</option>
+            <option value="people-adult-36">Ondra Nerud</option>
+          </select>
+        </div>
+      </div>      
+
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="id_content"
+          >Vzkaz:</label>
+        <div class="col-md-9">
+          <textarea
+              id="id_content"
+              rows="10"
+              cols="40"
+              name="content"
+              class="form-control"
+            ></textarea
+            ><input
+              type="hidden"
+              name="url"
+              value="/tabory/trosecnici-na-hadince/15/"
+              id="id_url"
+            />
+        </div>
+      </div>     
+      
+      <div class="form-group row">
+        <span class="col-md-3 col-form-label"></span>
+        <div class="col-md-9">
+          <input type="submit" value="Odeslat" class="btn btn-primary" />
+        </div>
+      </div>       
+            
+    </form>
+  </div>
 </div>
+
 <div id="tab-oddily" aria-labelledby="oddily-tab" class="tab-pane fade" role="tabpanel">
 
   <h1 class="text-center h2  mb-5">

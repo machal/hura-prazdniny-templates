@@ -84,3 +84,27 @@ h1,
   }
 }
 
+// Tables
+
+.table {
+  .thead-dark {
+    th {
+      border: none;
+    }
+  }
+}  
+
+.table .btn {
+  position: relative;
+  margin-top: -0.5rem;
+  margin-bottom: -0.25rem;
+  display: inline-flex;  
+  height: 2rem;
+  line-height: 0.70rem;  
+  justify-content: center;
+  align-items: center;
+}
+
+.table .btn-circle {
+  width: 2rem;
+}

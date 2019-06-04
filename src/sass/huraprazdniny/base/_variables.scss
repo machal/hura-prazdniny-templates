@@ -65,6 +65,7 @@ $input-padding-x: $hp-padding-x;
 // Buttons
 
 $btn-border-radius: $border-radius-lg; // Changing only $border-radius does not work
+$btn-light-bg: white;
 
 // Nav tabs
 
@@ -73,5 +74,20 @@ $nav-tabs-border-radius: $border-radius;
 
 // Tables
 
-$table-border-color: $border-color;
-$table-accent-bg: transparentize($color: $body-color, $amount: 0.95);
+$table-color: #32495e;
+$table-bg: #f1fafb;
+$table-accent-bg: #e4f7f8;
+
+$table-border-color:  white;
+$table-border-width: 2px;
+
+$table-dark-bg: $body-color;
+$table-dark-color: white;
+
+
+// * hlavicka tabulky: #32495e
+// * text v tabulkach: #32495e
+// * barva car: #FFF (tlouska silnejsi)
+// * suda radka bg: #f1fafb
+// * licha radka: #e4f7f8
+// * pozadi tlacitek: #FFF
