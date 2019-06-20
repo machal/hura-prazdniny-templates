@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="dist/css/style.css?4">
+    <link rel="stylesheet" href="dist/fancybox/fancybox.css?4">
+    
+    <script src="dist/js/jquery.js" defer></script>
+    <script src="dist/js/fancybox.js" defer></script>
+    <script src="dist/js/index.js" defer></script>
+
+    <title></title>
+  </head>
+  <body>
+<!-- Navigace -->
+<nav class="hp-navmain" role="navigation">
+  <!-- Logo -->
+  <p class="hp-navmain__center">
+    <a href="index.html" class="hp-navmain__center-logo">
+      <img src="dist/svg/hrp-logo.svg" alt="Hurá prázdniny" class="img-fluid">
+    </a>
+  </p>
+  <!-- Domu a nabidka taboru -->
+  <p class="hp-navmain__left">
+    <a href="index.html" class="hp-navmain__left-home btn btn-secondary btn-inverted">
+      <img src="dist/svg/home.svg" alt="Domů" class="hp-navmain__left-img">
+    </a>
+    <a href="index.html" class="hp-navmain__left-camps btn btn-secondary btn-inverted">
+      <span class="d-none d-sm-inline">Nabídka táborů</span>
+      <span class="d-inline d-sm-none">Tábory</span>
+    </a>
+  </p>
+  <!-- Prihlaska -->
+  <p class="hp-navmain__right">
+    <a href="#" class="hp-navmain__right-form btn btn-primary">Přihláška</a>
+  </p>
+</nav>
+<!-- /.hp-navmain -->
+<div class="hp-head">
+  <p class="hp-head__preheading h2">
+    Hurá prázdniny z. s.
+  </p>
+  <h1 class="hp-head__heading">
+    Vzkazovník
+  </h1> 
+  <p class="hp-head__postheading h3">
+    Táborová pošta
+  </p>      
+</div>
+<div class="container">
+  <div class="hp-content">
+    <!-- Začátek obsahu  -->
+
+    <p>
+      Vzkazy doručujeme v tištěné podobě během tábora obvykle do 24h od odeslání
+      a to dětem i personálu.
+    </p>
+
+    <form
+      action="/tabory/hadinka-2019-3/vzkaz/"
+      method="post"
+      class="form hp-form"
+    >
+      <input
+        type="hidden"
+        name="csrfmiddlewaretoken"
+        value="QkvSfEp9NTI68R5i2fOIVYF5rbps1d64q2JdiwU7yzC9bkIioVK0FaeLynJm9Bil"
+      />
+
+      <div class="form-group">
+        <label for="id_to">Vzkaz pro</label
+        ><select name="to" class="form-control" title="" id="id_to">
+          <option value="people-adult-2">Albert Čuba (dospělák)</option>
+
+          <option value="people-child-102">Hrubá Natálie (oddíl č.4)</option>
+
+          <option value="people-child-103">Svitičová Nina (oddíl č.4)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="id_content">Text vzkazu</label
+        ><textarea
+          name="content"
+          cols="40"
+          rows="3"
+          class="form-control"
+          placeholder="Sem napište váš vzkaz"
+          title=""
+          required
+          id="id_content"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="id_formula">Kolik je 3 + 5?</label
+        ><input
+          type="number"
+          name="formula"
+          class="form-control"
+          placeholder="Napište správné číslo (ochrana před roboty)"
+          title=""
+          required
+          id="id_formula"
+        />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Odeslat vzkaz</button>
+      </div>
+    </form>
+
+    <!-- Konec obsahu  -->
+  </div>
+  <!-- /.hp-content -->
+</div>
+<!-- .container -->
+
+<!-- Paticka -->
+<footer class="hp-foot" role="contentinfo">
+
+  <div class="hp-foot__wave"></div>
+
+  <div class="container">
+      
+    <p class="hp-foot__logo">
+      <a href="#" class="hp-foot__logo-anchor">
+        <img src="dist/svg/hrp-logo-triradkove.svg?2" alt="Hurá prádzniny" class="img-fluid">
+      </a>
+    </p> 
+
+    <p class="hp-foot__text-large">
+        Stránky provozuje spolek Hurá prázdniny.
+        <br>
+        Téměř 20 let pořádáme oblíbené dětské tábory.
+        <br>
+        Vaše dotazy rádi zodpovíme na 
+        <a href="mailto:info@huraprazdniny.cz?subject=Dotaz%20z%20webu&body=Dobr%C3%BD%20den%2C%0A%0A">info@huraprazdniny.cz</a>
+        <br> nebo na telefonu 
+        <strong class="hp-foot__phone">606 643 700</strong>.
+    </p>
+
+    <p class="hp-foot__text-small">
+      Hurá prázdniny z.s. se sídlem Rekreační 2126/7, Poruba, 708 00 Ostrava, IČO 1348388, datová schránka: d5e27n6
+      <br>
+      <a href="#">Stanovy</a> — 
+      <a href="#">Táborový řád</a> — 
+      <a href="#">Archiv táborů</a> — 
+      <a href="#">Napište nám</a>
+      <br>
+      <a href="#">Facebook</a> — 
+      <a href="#">Instagram</a> — 
+      <a href="#">Transparentní účet</a>
+    </p>
+
+  </div>
+
+</footer><!-- /.hp-foot --> 
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
