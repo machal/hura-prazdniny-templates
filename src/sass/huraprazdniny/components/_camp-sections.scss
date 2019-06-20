@@ -1,0 +1,60 @@
+// Camp Sections
+
+.camp-sections {
+  @include media-breakpoint-up(lg) { 
+    font-size: $font-size-lg;
+  }
+}
+
+// Rewriting Bootstrap styles partially (.nav.nav-tabs):
+
+.nav.camp-sections__nav {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+}
+
+.camp-sections__nav-item {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  a {    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;    
+    width: 2em;
+    height: 2em;
+    line-height: 1em;
+    padding: 1em;
+    border-radius: 50%;
+    background: #f9e3df;
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  a.active {
+    background: #e7f7fa;
+    color: $body-color;
+  }
+}  
+
+.camp-sections__section-list {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  @include media-breakpoint-up(md) { 
+    max-width: 66%;    
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 7em;
+  }  
+}
