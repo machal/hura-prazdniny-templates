@@ -1,0 +1,68 @@
+{{> html-head }}
+
+{{> nav }}
+
+{{> head-vzkazovnik }}
+
+<div class="container">
+  <div class="hp-content">
+    <!-- Začátek obsahu  -->
+
+    <h2>Vzkaz pro: Hrubá Natálie</h2>    
+
+    <p>
+      Vzkazy doručujeme v tištěné podobě během tábora obvykle do 24h od odeslání
+      a to dětem i personálu.
+    </p>
+
+    <form
+      action="/tabory/hadinka-2019-3/vzkaz/"
+      method="post"
+      class="form hp-form"
+    >
+      <input
+        type="hidden"
+        name="csrfmiddlewaretoken"
+        value="QkvSfEp9NTI68R5i2fOIVYF5rbps1d64q2JdiwU7yzC9bkIioVK0FaeLynJm9Bil"
+      />
+
+      <div class="form-group">
+        <label for="id_content">Text vzkazu</label
+        ><textarea
+          name="content"
+          cols="40"
+          rows="3"
+          class="form-control"
+          placeholder="Sem napište váš vzkaz"
+          title=""
+          required
+          id="id_content"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="id_formula">Kolik je 3 + 5?</label
+        ><input
+          type="number"
+          name="formula"
+          class="form-control"
+          placeholder="Napište správné číslo (ochrana před roboty)"
+          title=""
+          required
+          id="id_formula"
+        />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Odeslat vzkaz</button>
+      </div>
+    </form>
+
+    <!-- Konec obsahu  -->
+  </div>
+  <!-- /.hp-content -->
+</div>
+<!-- .container -->
+
+{{> foot }}
+
+{{> html-foot }}

@@ -38,58 +38,75 @@
   </p>
 </nav>
 <!-- /.hp-navmain -->
-    <div class="container">
+<div class="hp-head">
+  <p class="hp-head__preheading h2">
+    Hurá prázdniny z. s.
+  </p>
+  <h1 class="hp-head__heading">
+    Vzkazovník
+  </h1> 
+  <p class="hp-head__postheading h3">
+    Táborová pošta
+  </p>      
+</div>
+<div class="container">
+  <div class="hp-content">
+    <!-- Začátek obsahu  -->
 
-      <div class="hp-content">
+    <h2>Vzkaz pro: Hrubá Natálie</h2>    
 
-        <h1 class="h2">
-          Šablony pro HuráPrázdniny.cz
-        </h1>
+    <p>
+      Vzkazy doručujeme v tištěné podobě během tábora obvykle do 24h od odeslání
+      a to dětem i personálu.
+    </p>
 
-        <ul>
-          <li>
-            <a href="typo.html">
-              Typografie
-            </a>
-          </li>
-          <li>
-            Přihláška:
-            <a href="prihlaska.html">
-              Formulář  
-            </a>
-            –
-            <a href="prihlaska-statusy.html">
-              Statusy
-            </a>
-          </li>  
-          <li>
-              Vzkazovník:
-              <a href="vzkazovnik.html">
-                Obecný
-              </a>
-              –
-              <a href="vzkazovnik-jmeno.html">
-                Na jméno
-              </a>
-            </li>                    
-          <li>
-            <a href="tabor.html">
-            Tábor
-            </a>                           
-          </li> 
-          <li>
-            <a href="tabory.html">
-            Tábory
-            </a>                           
-          </li>                                        
-        </ul>
- 
+    <form
+      action="/tabory/hadinka-2019-3/vzkaz/"
+      method="post"
+      class="form hp-form"
+    >
+      <input
+        type="hidden"
+        name="csrfmiddlewaretoken"
+        value="QkvSfEp9NTI68R5i2fOIVYF5rbps1d64q2JdiwU7yzC9bkIioVK0FaeLynJm9Bil"
+      />
+
+      <div class="form-group">
+        <label for="id_content">Text vzkazu</label
+        ><textarea
+          name="content"
+          cols="40"
+          rows="3"
+          class="form-control"
+          placeholder="Sem napište váš vzkaz"
+          title=""
+          required
+          id="id_content"
+        ></textarea>
       </div>
-      <!-- /.hp-content -->
+      <div class="form-group">
+        <label for="id_formula">Kolik je 3 + 5?</label
+        ><input
+          type="number"
+          name="formula"
+          class="form-control"
+          placeholder="Napište správné číslo (ochrana před roboty)"
+          title=""
+          required
+          id="id_formula"
+        />
+      </div>
 
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Odeslat vzkaz</button>
+      </div>
+    </form>
 
-    </div><!-- .container -->
-
+    <!-- Konec obsahu  -->
+  </div>
+  <!-- /.hp-content -->
+</div>
+<!-- .container -->
 
 <!-- Paticka -->
 <footer class="hp-foot" role="contentinfo">
@@ -130,7 +147,7 @@
 
   </div>
 
-</footer><!-- /.hp-foot -->     
+</footer><!-- /.hp-foot --> 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
