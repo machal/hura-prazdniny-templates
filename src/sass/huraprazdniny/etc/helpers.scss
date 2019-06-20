@@ -3,6 +3,10 @@
 
 // Max widths
 
+.maxw-25em {
+  max-width: 25em !important; // Needed for BS overwrite
+}
+
 .maxw-130px {
   max-width: 130px !important; // Needed for BS overwrite
 }
